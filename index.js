@@ -30,6 +30,13 @@ function addNewGoal() {
         }
     }
 
+    if (goalInput !== '') {
+        let newGoal = document.createElement('li');
+        newGoal.textContent = goalInput;
+        goalList.appendChild(newGoal);
+    }
+
+
 
 }
     
