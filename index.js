@@ -23,6 +23,14 @@ function addNewGoal() {
     let goalList = document.getElementById('goalList');
     let currentGoals = document.querySelectorAll('#goalList li');
 
+    for(let goal of currentGoals){
+        if(goal.textContent === goalInput){
+            alert('This goal already exists!');
+            return;
+        }
+    }
+
+
 }
     
     // ⚠️ Hint 1: Check for duplicates
