@@ -34,8 +34,10 @@ function addNewGoal() {
         let newGoal = document.createElement('li');
         newGoal.textContent = goalInput;
         goalList.appendChild(newGoal);
+        document.getElementById('goalInput').value = '';
     }
 
+    
 
 
 }
